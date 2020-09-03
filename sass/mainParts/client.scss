@@ -1,0 +1,39 @@
+/*start client*/
+.client{
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    @extend %sec-padding;
+    @include backimf ("keyboard", 0.6, 0.6);
+    color: #FFF;
+    @extend %back-img;
+    h2{
+        margin-bottom: 20px;
+    }
+    .client-contant{
+        display: none;
+        p{
+            line-height: 2
+        }
+        span{
+            color: $mainColor;
+            font-size: 20px
+        }   
+    }
+    .active{
+        display: block;
+        @include propPrefix(animation, (fade 1s linear 1 ), (webkit, moz));
+        @include propPrefix(transition, (all 0.7s linear), (webkit, moz));
+         
+    }
+}
+
+@include animation(fade) {
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+/*end client*/

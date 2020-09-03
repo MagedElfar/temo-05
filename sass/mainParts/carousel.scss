@@ -1,0 +1,32 @@
+/*******************************************************************************************************************************************************/
+/*start carousel*/
+.carousel{
+    a{
+        z-index: 999
+    }
+    .carousel-inner{
+        .carousel-item{
+            .carousel-caption{
+                top: 0%;
+                left: 0%;
+                //@include propPrefix(transform, (translate(-50%,-50%)), (webkit, moz));
+                width: 100%;
+                height: 100%;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(#000, 0.6);
+                h5{
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    span{
+                        color: $mainColor
+                    }  
+                }
+            }
+        } 
+    }
+}
+/*end carousel*/

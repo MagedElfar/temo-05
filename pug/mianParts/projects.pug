@@ -1,0 +1,60 @@
+//start projects
+section(class="projects")
+    div(class=cont)
+        h4(class="text-capitalize head-after") projects
+        ul(class="list-unstyled")
+            - for(var i=0; i<4; i++)
+                if i == 0
+                    li(class="active text-capitalize" data-pro=`${contant[i]}`)= contant[i]
+                else
+                    li(class="text-capitalize" data-pro=`${contant[i]}`)=contant[i]
+        div(class="row")
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[1]}`)
+                        img(src="img/products/01.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[2]}`)
+                        img(src="img/products/02.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[2]}`)
+                        img(src="img/products/03.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[1]}`)
+                        img(src="img/products/04.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[3]}`)
+                        img(src="img/products/05.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+                div(class="col-4")
+                    div(class="img-cont" data-pro=`${contant[3]}`)
+                        img(src="img/products/06.jpg")
+                        div(class="overlay text-center")
+                            h5(class="text-capitalize") view more
+                            div(class="icon")
+                                i(class="fas fa-heart")
+                                span 14
+//end projects

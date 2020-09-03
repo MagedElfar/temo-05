@@ -1,0 +1,50 @@
+/*start team*/
+.team{
+    @extend %sec-padding;
+    .team-contant{
+        p{
+            color: $pcolor;
+            font-size: $fontSize - 5
+        }
+    }
+    .team-img{
+        padding-top: 20px;
+        ul{
+            li{
+                position: relative;
+                padding: 5px;
+                img{
+                    width: 100%
+                }
+                &::after{
+                    content: "Maged";
+                    color: #FFF;
+                    text-align: center;
+                    @extend %position;
+                    top: 5px;
+                    left: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: none;
+                    width: calc(100% - 10px);
+                    height: calc(100% - 10px);
+                    background-color: rgba($mainColor,0.8);
+                }
+                &:hover::after{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+            }
+        }
+    }
+    &::before{
+        content: " ";
+        display: block;
+        width: 85%;
+        height: 2px;
+        margin: -30px auto 40px;
+        background-color: rgba(#000,0.6)
+    }
+}
+/*end team*/

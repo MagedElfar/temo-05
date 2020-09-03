@@ -1,0 +1,21 @@
+.services{
+    @extend %sec-padding;
+    h3{
+        &::after{
+            margin-bottom: 60px
+        }
+    }
+    .media{
+        margin-top: 20px;
+        i{
+            color: $mainColor
+        }
+        .media-body{
+            padding: 0 20px 0 5px;
+            p{
+                color: #888;
+                font-size: $fontSize - 6
+            }
+        }
+    }
+}

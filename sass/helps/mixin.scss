@@ -1,0 +1,20 @@
+@mixin propPrefix ($prop, $value: (), $prefixes: ()) {
+    @each $prefix in  $prefixes{
+        #{"-" + $prefix + "-" + $prop}: $value;
+    }
+    #{$prop}: $value;
+
+};
+
+@mixin backimf ($src, $x, $y) {
+    background-image: linear-gradient(rgba(#000, $x), rgba(#000, $y)), url("img/#{$src}.jpg")
+};
+
+@mixin animation ($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

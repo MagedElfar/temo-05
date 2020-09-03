@@ -1,0 +1,63 @@
+/*stert up-foot*/
+.up-footer{
+    @extend %sec-padding;
+    background: $footercolor;
+    color: white;
+    .part-1{
+        h5{
+            margin-bottom: 20px
+        }
+        p{
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 20px
+        }
+        ul{
+            li{
+                @extend %inline-list;
+                i{
+                    font-size: 20px
+                }
+            }
+        }
+    }
+    .part-2{
+        h5{
+            margin-bottom: 20px
+        }
+        ul{
+            li{
+                @extend %inline-list;
+                margin-bottom: 10px
+            }
+        }
+    }
+    .part-3{
+        h5{
+            margin-bottom: 40px
+        }
+        .media{
+            margin-bottom: 15px;
+            .media-body{
+                span{
+                    color: #888;
+                    font-size: 16px
+                }
+            }
+        }
+    }
+    .part-4{
+        h5{
+            margin-bottom: 20px
+        }
+        ul{
+            li{
+                border-bottom: 1px solid #888;
+                padding: 10px
+                
+            }
+    
+        }
+    }
+}
+/*stert up-foot*/
